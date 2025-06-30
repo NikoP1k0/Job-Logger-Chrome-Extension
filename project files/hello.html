@@ -1,5 +1,31 @@
 <html>
+  <head>
+    <title>Job logger</title>
+    <style>
+      body {
+        width: 250px;
+        min-width: 250px;
+      }
+      #formSection { display: none; }
+    </style>
+  </head>
+
   <body>
-    <h1>Hello Extensions</h1>
+    <div id="helloSection">
+      <h1 style="font-size: 15px;">Do you want to save this job?</h1>
+      <button id="loggingButton">Log this job</button>
+    </div>
+    <div id="formSection">
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" name="jobTitle"><br><br>
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company"><br><br>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location"><br><br>
+      <label for="date">Today's date:</label>
+      <input type="date" id="date" name="date"><br><br>
+      <button id="saveJobButton">Save job</button>
+    </div>
+    <script src="popup.js"></script>
   </body>
 </html>
